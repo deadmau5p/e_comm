@@ -1,0 +1,35 @@
+<div class="home_con">
+    <div class="kazalo">
+        <div id="spol_">
+            <p id="sex">Gender</p>
+            <ul id="opt_s">
+                <li (click)="onChose($event, 'male')" class="element" role="button">Male</li>
+                <li (click)="onChose($event, 'female')" class="element" role="button">Female</li>
+            </ul>
+        </div>
+        <div id="categ_">
+            <p id="cat">Category</p>
+            <ul id="opt_c">
+                <li (click)="onChose($event, 'pants')" class="element" role="button">
+                    Pants
+                </li>
+                <li (click)="onChose($event, 'socks')" class="element" role="button">
+                    Socks
+                </li>
+                <li (click)="onChose($event, 'tops')" class="element" role="button">
+                    Tops
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="desn">
+        <div class="elements">
+            <div class="item" *ngFor="let item of items">
+                <app-item  [item]="item"></app-item>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>

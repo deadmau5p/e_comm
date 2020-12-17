@@ -1,0 +1,116 @@
+.home_con
+{
+   
+   height: 100%;
+}
+
+.sex_:active, sex_:hover #sex_
+{
+    display: block;
+}
+
+.cat_:active, cat_:hover #cat_
+{
+    display: block;
+}
+
+#sex_, #cat_
+{
+    display: none;
+}
+
+.kazalo
+{
+    
+    width:10%;
+    height: 700px;
+    position: fixed;
+    
+    top: 300px;
+    left: 0px;
+}
+.desn
+{
+    position: absolute;
+    left: 20%;
+    width: 70%;
+    top: 300px;
+}
+.item
+{
+    width: 23%;
+    height: 350px;
+    text-align: center;
+    align-content: space-around;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 1px;
+    cursor: pointer;
+}
+
+.item:hover
+{
+    box-shadow: 0px 0px 5px;
+}
+
+
+.elements
+{
+    
+    height:fit-content;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+
+.head
+{
+    font-size: 25px;
+    font-weight: 700;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#opt_s
+{
+    display: none;
+}
+
+
+#sex, #cat
+{
+    cursor: pointer;
+}
+
+#opt_c
+{
+    display: none;
+}
+
+
+
+#spol_, #categ_
+{
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#spol_ li, #categ_ li
+{
+    list-style-type: none;
+}
+
+.element
+{
+    cursor: pointer;
+}
+
+.element:hover
+{
+    font-weight: bold;
+}

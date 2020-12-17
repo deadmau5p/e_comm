@@ -1,0 +1,26 @@
+
+<div class="cart">
+    <h1>
+        This is your cart
+    </h1>
+    <h2>
+        Buy now
+    </h2>
+    <div  *ngIf="bag !== undefined" id="show_cart">
+        <ul>
+            
+            <div role="button" class="cart_show_i" *ngFor="let item of bag">
+                <li>drek</li>
+                <p>{{item.cena | currency}}</p>
+                <img src="../../assets/imgg.jpg" />
+            </div>
+            <hr/>
+            <div class="che">
+                <p style="font-size: 25px;" >Total price: {{getTotalPrice() | currency : "EUR"}}</p>
+                <button  class="che_btn">To checkout</button>
+            </div>
+            
+        </ul>
+    </div>
+</div>
+

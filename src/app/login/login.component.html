@@ -1,0 +1,63 @@
+<div *ngIf="typeoflog === 'login' " class="log_con">
+    <h2>Please log in!</h2>
+    <form (submit)="onSubmitForm($event)">
+        <div class="otrok">
+            <label for="user">Enter your username:  </label><input name="user" type="text"><br/>
+        </div>
+        <div class="otrok">
+            <label for="pass">Enter password:  </label><input name="pass" type="password">
+        </div>
+        <input class="sbm_btn otrok" type="submit" value="Submit"/>
+        
+    </form>
+    
+    <span>Don't have an account? Sign in now</span><button class="reg_btn" (click)="onRegClick()">Register</button>
+    <h3 id="welcome"></h3>
+</div>
+<div *ngIf="typeoflog === 'reg'" class="log_con">
+    <h2>Register quick!</h2>
+    <form (submit)="onSubmitForm($event)">
+        <div class="otrok">
+            <label for="user">Enter your username:  </label><input name="user" type="text"><br/>
+        </div>
+        <div class="otrok">
+            <label for="pass">Enter password:  </label><input name="pass" type="password">
+        </div>
+        <div class="otrok">
+            <label for="email">Enter email:  </label><input name="email" type="text">
+        </div>
+        <div class="otrok">
+            <label for="fname">Enter first name:  </label><input name="fname" type="text">
+        </div>
+        <div class="otrok">
+            <label for="lname">Enter last name:  </label><input name="lname" type="text">
+            
+        </div>
+        <div class="otrok">
+            <label for="Gender">Gender :</label>
+            <span>Male</span>
+            <input name="gender" type="radio" value="male">
+            <span>Female</span>
+            <input name="gender" type="radio" value="female">
+            <span>Other</span>
+            <input name="gender" type="radio" value="other">
+        </div>
+        <div class="otrok">
+            <label for="count">Country:  </label><input name="count" type="text">
+        </div>
+        <div class="otrok">
+            <label for="city">City :  </label><input name="city" type="text">
+        </div>
+        <div class="otrok">
+            <label for="addr">Address :  </label><input name="addr" type="text" >
+        </div>
+        <input class="sbm_btn otrok" type="submit" value="Submit"/>
+        
+    </form>
+
+    <span>Back to login</span><button class="reg_btn">Back</button>
+    
+</div>
+<div class="success">
+    Succesfully loged in
+</div>

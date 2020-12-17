@@ -1,0 +1,38 @@
+<div class="navbar">
+    <div class="logo">
+        <a [routerLink]="['']" class="nav-link">Home page</a>
+    </div>
+    <div class="push">
+        <div *ngIf="user !== undefined && user.up_ime !== ''">
+            <p class="inl m_20">{{user.up_ime}}</p>
+            <button class="inl" (click)="cleanUser($event)" class="lo_btn">Log out</button>    
+        </div>
+        
+        <button *ngIf="user === undefined || user.up_ime === ''"  [routerLink]="['login']" class="lg_btn">Login</button>
+        
+    </div>
+    
+    <div role="button" [routerLink]="['cart']" id="cart">
+        <img src="../../assets/cart.png" >
+        <p id="counter">{{bag?.length}}</p>
+    </div>
+    <div *ngIf="bag.length !== 0" id="show_cart">
+        <ul>
+            <div *ngIf="bag !== undefined">
+                <div role="button" class="cart_show_i" *ngFor="let item of bag">
+                    <li>{{item.ime}}</li>
+                    <p>{{item.cena | currency}}</p>
+                    <img src="../../assets/imgg.jpg" />
+                </div>
+                <hr/>
+                <div class="che">
+                    <p style="font-size: 25px;" >Total price: {{getTotalPrice() | currency : "EUR"}}</p>
+                    <button [routerLink]="['cart']" class="che_btn">To checkout</button>
+                </div>
+            </div>
+            
+            
+        </ul>
+    </div>
+    
+</div>

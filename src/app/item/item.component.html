@@ -1,0 +1,9 @@
+<div class="card" *ngIf="item !== undefined">
+    <h3>{{item.ime}}</h3>
+    <img [routerLink]="['izd/1']" class="imgg" src="../../assets/imgg.jpg" />
+    <div>
+        <p class="price">Only: {{item.cena |currency:"EUR"}}</p>
+        <button (click)="onAddToBag($event, item)" class="bag_btn">Add to bag</button>
+    </div>
+    
+</div>

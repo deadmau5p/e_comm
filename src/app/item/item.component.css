@@ -1,0 +1,46 @@
+.card
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    height: 100%;
+}
+
+.bag_btn
+{
+    display: inline-block;
+    background-color: rgba(240, 9, 9, 0.856);
+    font-size: 16px;
+    border: 1px solid;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left:30px ;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.imgg{
+    height: 60%;
+    width: 100%;
+}
+
+.bag_btn:hover
+{
+    background-color: white;
+    color: red;
+}
+
+.bag_btn:focus
+{
+    outline: none;
+}
+
+.price
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+}
+
